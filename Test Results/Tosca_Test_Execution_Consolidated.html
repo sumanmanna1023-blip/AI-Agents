@@ -1,0 +1,23 @@
+﻿<html><head><style>
+table { border-collapse: collapse; font-family: Arial; }
+th { background-color: #4472C4; color: white; padding: 10px; text-align: left; border: 1px solid #ddd; }
+td { padding: 8px; border: 1px solid #ddd; }
+tr:nth-child(even) { background-color: #f9f9f9; }
+.Passed { background-color: #92D050; }
+.Failed { background-color: #FF0000; color: white; }
+.Blocked { background-color: #FFC000; }
+</style></head><body>
+<h2>Tosca Test Execution Report</h2>
+<table>
+<tr><th>Test Case ID</th><th>Test Case Name</th><th>Status</th><th>Failure Reason</th><th>Details</th><th>Source PDF</th></tr>
+<tr><td>TC001</td><td>User Login with Valid Credentials</td><td class='Passed'>Passed</td><td>None</td><td>User successfully logged in with valid email and password</td><td>TC-001.txt</td></tr>
+<tr><td>TC002</td><td>User Login with Invalid Password</td><td class='Failed'>Failed</td><td>Invalid credentials provided. Access denied.</td><td>Login attempt failed when incorrect password was provided. System correctly rejected invalid credentials.</td><td>TC-001.txt</td></tr>
+<tr><td>TC003</td><td>Password Reset Flow</td><td class='Passed'>Passed</td><td>None</td><td>Password reset email sent successfully and user able to set new password.</td><td>TC-001.txt</td></tr>
+<tr><td>TC004</td><td>Create Order with Valid Items</td><td class='Passed'>Passed</td><td>None</td><td>Order successfully created with multiple items. Order ID: ORD-2024-001</td><td>TC-002.txt</td></tr>
+<tr><td>TC005</td><td>Payment Processing</td><td class='Failed'>Failed</td><td>Payment gateway returned 500 Internal Server Error</td><td>Payment processing failed when attempting to process credit card. Gateway timeout occurred.</td><td>TC-002.txt</td></tr>
+<tr><td>TC006</td><td>Order Confirmation Email</td><td class='Blocked'>Blocked</td><td>Dependent test case TC005 failed</td><td>This test was blocked because the payment processing test (TC005) failed. Cannot proceed with confirmation email test.</td><td>TC-002.txt</td></tr>
+<tr><td>TC007</td><td>Inventory Update After Order</td><td class='Passed'>Passed</td><td>None</td><td>Inventory was correctly decremented for ordered items.</td><td>TC-002.txt</td></tr>
+<tr><td>TC008</td><td>Search with Valid Query</td><td class='Passed'>Passed</td><td>None</td><td>Search returned 15 results matching the query criteria.</td><td>TC-003.txt</td></tr>
+<tr><td>TC009</td><td>Generate Monthly Report</td><td class='Not Available'>Not Available</td><td>Report generation process initiated but final status could not be determined from logs</td><td>Test execution started but completion status unclear from available report data.</td><td>TC-003.txt</td></tr>
+<tr><td>TC001</td><td>User Login with Valid Credentials</td><td class='Passed'>Passed</td><td>None</td><td>Duplicate test case from TC-001.pdf showing consistent results across reports.</td><td>TC-003.txt</td></tr>
+</table></body></html>

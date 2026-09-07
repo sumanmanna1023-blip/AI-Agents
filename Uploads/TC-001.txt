@@ -1,0 +1,36 @@
+===== TOSCA TEST EXECUTION REPORT =====
+Report Date: 2024-01-15
+Report Name: Login Module Test Report
+PDF: TC-001.pdf
+
+===== TEST CASE 1 =====
+Test Case ID: TC001
+Test Case Name: User Login with Valid Credentials
+Status: Passed
+Execution Time: 0.5 seconds
+Test Steps Executed: 3
+Failed Steps: 0
+Error Message: None
+Details: User successfully logged in with valid email and password
+
+===== TEST CASE 2 =====
+Test Case ID: TC002
+Test Case Name: User Login with Invalid Password
+Status: Failed
+Execution Time: 1.2 seconds
+Test Steps Executed: 2
+Failed Steps: 1
+Error Message: Invalid credentials provided. Access denied.
+Details: Login attempt failed when incorrect password was provided. System correctly rejected invalid credentials.
+
+===== TEST CASE 3 =====
+Test Case ID: TC003
+Test Case Name: Password Reset Flow
+Status: Passed
+Execution Time: 2.3 seconds
+Test Steps Executed: 5
+Failed Steps: 0
+Error Message: None
+Details: Password reset email sent successfully and user able to set new password.
+
+===== END OF REPORT =====
