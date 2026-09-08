@@ -1,161 +1,43 @@
 ﻿{
+    "pdf_files_processed":  3,
+    "pdf_files_failed":  0,
+    "test_cases_consolidated":  3,
+    "test_cases":  [
+                       {
+                           "sctask_id":  "Not Available",
+                           "test_case_id":  "Not Available",
+                           "test_case_name":  "Validate Application Page in Edge",
+                           "status":  "Passed",
+                           "failure_reason":  "Not Available",
+                           "test_result_details":  "Started: 9/3/2026 5:19:21 PM; Ended: 9/3/2026 5:30:04 PM; Executed by: Suman.Manna_contractor@jmfamily.com",
+                           "source_tosca_pdf":  "TC-001.pdf"
+                       },
+                       {
+                           "sctask_id":  "Not Available",
+                           "test_case_id":  "Not Available",
+                           "test_case_name":  "Validate Customer Experience in Edge",
+                           "status":  "Failed",
+                           "failure_reason":  "Not Available",
+                           "test_result_details":  "Started: 9/4/2026 1:28:11 PM; Ended: 9/4/2026 1:38:27 PM; Executed by: Suman.Manna_contractor@jmfamily.com",
+                           "source_tosca_pdf":  "TC-002.pdf"
+                       },
+                       {
+                           "sctask_id":  "Not Available",
+                           "test_case_id":  "Not Available",
+                           "test_case_name":  "Validate New_page in Edge",
+                           "status":  "Passed",
+                           "failure_reason":  "Not Available",
+                           "test_result_details":  "Started: 9/2/2026 12:45:52 PM; Ended: 9/2/2026 12:49:57 PM; Executed by: Suman.Manna_contractor@jmfamily.com",
+                           "source_tosca_pdf":  "TC-003.pdf"
+                       }
+                   ],
+    "duplicates_detected":  [
+
+                            ],
     "conflicts_detected":  [
 
                            ],
-    "total_pdfs_processed":  3,
-    "processing_summary":  {
-                               "pdfs_failed":  0,
-                               "pdfs_processed":  3,
-                               "test_cases_extracted":  10,
-                               "extraction_completeness":  "100%"
-                           },
-    "execution_timestamp":  "2026-09-07T19:43:34.6920390+05:30",
-    "test_cases":  [
-                       {
-                           "source_tosca_pdf":  "TC-001.txt",
-                           "test_case_name":  "User Login with Valid Credentials",
-                           "confidence":  "High",
-                           "failure_reason":  "None",
-                           "test_result_details":  "User successfully logged in with valid email and password",
-                           "validation_status":  "Valid",
-                           "duplicate":  false,
-                           "status":  "Passed",
-                           "conflict":  false,
-                           "test_case_id":  "TC001"
-                       },
-                       {
-                           "source_tosca_pdf":  "TC-001.txt",
-                           "test_case_name":  "User Login with Invalid Password",
-                           "confidence":  "High",
-                           "failure_reason":  "Invalid credentials provided. Access denied.",
-                           "test_result_details":  "Login attempt failed when incorrect password was provided. System correctly rejected invalid credentials.",
-                           "validation_status":  "Valid",
-                           "duplicate":  false,
-                           "status":  "Failed",
-                           "conflict":  false,
-                           "test_case_id":  "TC002"
-                       },
-                       {
-                           "source_tosca_pdf":  "TC-001.txt",
-                           "test_case_name":  "Password Reset Flow",
-                           "confidence":  "High",
-                           "failure_reason":  "None",
-                           "test_result_details":  "Password reset email sent successfully and user able to set new password.",
-                           "validation_status":  "Valid",
-                           "duplicate":  false,
-                           "status":  "Passed",
-                           "conflict":  false,
-                           "test_case_id":  "TC003"
-                       },
-                       {
-                           "source_tosca_pdf":  "TC-002.txt",
-                           "test_case_name":  "Create Order with Valid Items",
-                           "confidence":  "High",
-                           "failure_reason":  "None",
-                           "test_result_details":  "Order successfully created with multiple items. Order ID: ORD-2024-001",
-                           "validation_status":  "Valid",
-                           "duplicate":  false,
-                           "status":  "Passed",
-                           "conflict":  false,
-                           "test_case_id":  "TC004"
-                       },
-                       {
-                           "source_tosca_pdf":  "TC-002.txt",
-                           "test_case_name":  "Payment Processing",
-                           "confidence":  "High",
-                           "failure_reason":  "Payment gateway returned 500 Internal Server Error",
-                           "test_result_details":  "Payment processing failed when attempting to process credit card. Gateway timeout occurred.",
-                           "validation_status":  "Valid",
-                           "duplicate":  false,
-                           "status":  "Failed",
-                           "conflict":  false,
-                           "test_case_id":  "TC005"
-                       },
-                       {
-                           "source_tosca_pdf":  "TC-002.txt",
-                           "test_case_name":  "Order Confirmation Email",
-                           "confidence":  "High",
-                           "failure_reason":  "Dependent test case TC005 failed",
-                           "test_result_details":  "This test was blocked because the payment processing test (TC005) failed. Cannot proceed with confirmation email test.",
-                           "validation_status":  "Valid",
-                           "duplicate":  false,
-                           "status":  "Blocked",
-                           "conflict":  false,
-                           "test_case_id":  "TC006"
-                       },
-                       {
-                           "source_tosca_pdf":  "TC-002.txt",
-                           "test_case_name":  "Inventory Update After Order",
-                           "confidence":  "High",
-                           "failure_reason":  "None",
-                           "test_result_details":  "Inventory was correctly decremented for ordered items.",
-                           "validation_status":  "Valid",
-                           "duplicate":  false,
-                           "status":  "Passed",
-                           "conflict":  false,
-                           "test_case_id":  "TC007"
-                       },
-                       {
-                           "source_tosca_pdf":  "TC-003.txt",
-                           "test_case_name":  "Search with Valid Query",
-                           "confidence":  "High",
-                           "failure_reason":  "None",
-                           "test_result_details":  "Search returned 15 results matching the query criteria.",
-                           "validation_status":  "Valid",
-                           "duplicate":  false,
-                           "status":  "Passed",
-                           "conflict":  false,
-                           "test_case_id":  "TC008"
-                       },
-                       {
-                           "source_tosca_pdf":  "TC-003.txt",
-                           "test_case_name":  "Generate Monthly Report",
-                           "confidence":  "Medium",
-                           "failure_reason":  "Report generation process initiated but final status could not be determined from logs",
-                           "test_result_details":  "Test execution started but completion status unclear from available report data.",
-                           "validation_status":  "Valid",
-                           "duplicate":  false,
-                           "status":  "Not Available",
-                           "conflict":  false,
-                           "test_case_id":  "TC009"
-                       },
-                       {
-                           "source_tosca_pdf":  "TC-003.txt",
-                           "test_case_name":  "User Login with Valid Credentials",
-                           "confidence":  "High",
-                           "failure_reason":  "None",
-                           "test_result_details":  "Duplicate test case from TC-001.pdf showing consistent results across reports.",
-                           "validation_status":  "Valid",
-                           "duplicate":  true,
-                           "status":  "Passed",
-                           "conflict":  false,
-                           "test_case_id":  "TC001"
-                       }
-                   ],
     "errors":  [
 
-               ],
-    "validation_summary":  {
-                               "validation_passed":  true,
-                               "total_records":  10,
-                               "valid_records":  10,
-                               "flagged_records":  1,
-                               "duplicates":  1,
-                               "conflicts":  0
-                           },
-    "total_test_cases_identified":  10,
-    "duplicates_detected":  [
-                                {
-                                    "occurrence_1":  {
-                                                         "source_pdf":  "TC-001.txt",
-                                                         "status":  "Passed"
-                                                     },
-                                    "occurrence_2":  {
-                                                         "source_pdf":  "TC-003.txt",
-                                                         "status":  "Passed"
-                                                     },
-                                    "test_case_id":  "TC001"
-                                }
-                            ],
-    "workflow_stage":  "Agent_1_Complete"
+               ]
 }
